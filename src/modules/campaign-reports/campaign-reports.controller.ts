@@ -28,7 +28,10 @@ export class CampaignReportsController {
   }
 
   @Get('stats')
-  @ApiOperation({ summary: 'Get aggregated stats by ad_id and date' })
+  @ApiOperation({
+    summary: 'Get aggregated stats by ad_id and date',
+    description: 'Supports pagination via query params: take (1–100, default 10), skip (default 0).',
+  })
   @ApiResponse({
     status: 200,
     description: 'Stats list',
