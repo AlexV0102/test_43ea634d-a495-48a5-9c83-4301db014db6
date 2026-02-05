@@ -1,0 +1,3 @@
+export const PROBATION_API_BASE_URL_KEY = 'PROBATION_API_BASE_URL';
+export const PROBATION_API_KEY_HEADER = 'x-api-key';
+export const PROBATION_API_KEY_ENV = 'PROBATION_API_KEY';
